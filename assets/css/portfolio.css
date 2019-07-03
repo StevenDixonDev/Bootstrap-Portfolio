@@ -1,8 +1,76 @@
-img{
-  min-height: 200px;
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0;
+  box-sizing: border-box;
+}
+
+.user-image{
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+
+#userInfo{
+  background-color: rgb(29, 29, 29);
+  min-height: 300px;
+}
+
+.user-flex{
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+#portfolio{
+  background-color: rgb(151, 151, 151);
+  max-height: none;
+  overflow-y: hidden;
+  margin: 0;
+}
+
+.card-img-top{
+  height: 200px;
+  border-bottom: #1d1d1d;
+}
+
+.card{
+  transition: 1s;
 }
 
 .card:hover{
-  box-shadow: 1px 1px 5px #000;
   cursor: pointer;
+  transform: scale(1.02);
+  
+}
+
+
+@media (min-width: 990px) {
+  .user-flex{
+    align-items: start;
+    text-align: start;
+  }
+  #portfolio{
+    max-height: 100vh;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1d1d1d; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
