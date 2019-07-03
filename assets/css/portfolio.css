@@ -42,7 +42,6 @@
 .card:hover{
   cursor: pointer;
   transform: scale(1.02);
-  
 }
 
 
@@ -52,7 +51,7 @@
     text-align: start;
   }
   #portfolio{
-    max-height: 100vh;
+    min-height: 100vh;
   }
 }
 
