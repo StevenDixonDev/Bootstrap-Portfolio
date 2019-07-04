@@ -29,15 +29,13 @@ $(document).ready(function(){
     url: 'https://api.github.com/users/stevenDixonDev/repos',
     method: 'GET'
   }).then(function(res){
-    console.log(res)
     $.each(res, function(index, project){
-      console.log(project)
       $.each(allowedProjects, function(index, allowed){
         if(allowed.name === project.name){
           $("#projects").append(`
-          <div class="col-md-12 col-lg-6 mb-3">
+          <div class="col-md-12 col-lg-6 col-xl-4 mb-3">
           <div class="card bg-dark text-white">
-          <img class="card-img-top" src="./assets/images/portfolio/${allowed.picture}" alt="${project.name}" />
+          <img class="card-img-top d-none d-lg-block" src="./assets/images/portfolio/${allowed.picture}" alt="${project.name}" />
           <div class="card-body">
             <h4 class="card-title">${project.name}</h4>
             <h5 class="card-text">${project.description}</h5>
@@ -45,6 +43,10 @@ $(document).ready(function(){
                 <p><i class="fas fa-code"></i> ${project.language}</p>
                 <p class="ml-3"><i class="fas fa-star"></i> ${project.stargazers_count}</p>
                 <p class="ml-3"><i class="fas fa-code-branch"></i> ${project.forks} </p>
+            </div>
+            <div>
+              <a href="${project.html_url}" target="_Blank" class="card-link">View Code</a>
+              <a href="${project.homepage}" target="_Blank" class="card-link">View Project</a>
             </div>
           </div>
           </div>
