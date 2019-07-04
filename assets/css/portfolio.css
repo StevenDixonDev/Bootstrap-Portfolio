@@ -10,6 +10,7 @@
   width: 250px;
   height: auto;
   border-radius: 5px;
+  border: 5px solid #007bff;
 }
 
 #userInfo{
@@ -41,8 +42,8 @@
 }
 
 .card:hover{
-  cursor: pointer;
-  transform: scale(1.02);
+  transform: scale(1.01);
+  transition: 1s;
 }
 
 

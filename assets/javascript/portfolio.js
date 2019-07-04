@@ -21,7 +21,7 @@ $(document).ready(function(){
     $(".user-about").append(`<h4>${res.bio}</h4>`);
     $(".user-info").append(`<h4>${res.name}</h4>`);
     $(".user-info").append(`<h4>@${res.login}</h4>`);
-    $(".user-contact").append(`<h6><i class="fas fa-link"></i> <a href="${res.html_url}">${res.html_url}</a></h6>`);
+    $(".user-contact").append(`<h6><i class="fab fa-github"></i> <a href="${res.html_url}">${res.html_url}</a></h6>`);
     $(".user-contact").append(`<h6><i class="fas fa-map-marker-alt"></i> ${res.location}</h6>`);
   })
 
@@ -30,6 +30,7 @@ $(document).ready(function(){
     method: 'GET'
   }).then(function(res){
     $.each(res, function(index, project){
+      console.log(project)
       $.each(allowedProjects, function(index, allowed){
         if(allowed.name === project.name){
           $("#projects").append(`
