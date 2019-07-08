@@ -7,6 +7,7 @@
 const allowedProjects = [
   {name: "Word-Guess-Game", picture: "Guess the Word.png"},
   {name: "unit-4-game", picture: "Starwars.jpg"},
+  {name: "TriviaGame", picture: "TriviaGame.png"}
 ]
 
 
