@@ -7,7 +7,7 @@
 }
 
 .user-image{
-  width: 250px;
+  width: 30%;
   height: auto;
   border-radius: 5px;
   border: 5px solid #007bff;
@@ -48,6 +48,9 @@
 
 
 @media (min-width: 990px) {
+  .user-image{
+    width: 100%;
+  }
   .user-flex{
     align-items: start;
     text-align: start;
@@ -55,6 +58,13 @@
   #userInfo{
     border-right: 10px solid #2e2e2e;
     border-bottom: 0px solid transparent;
+  }
+  #fixed{
+    position: fixed;
+    top:50%;
+    transform: translateY(-50%);
+    
+    width: 20%;
   }
   #portfolio{
     min-height: 100vh;

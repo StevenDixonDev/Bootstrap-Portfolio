@@ -7,7 +7,8 @@
 const allowedProjects = [
   {name: "Word-Guess-Game", picture: "Guess the Word.png"},
   {name: "unit-4-game", picture: "Starwars.jpg"},
-  {name: "TriviaGame", picture: "TriviaGame.png"}
+  {name: "TriviaGame", picture: "TriviaGame.png"},
+  {name: "GifTastic", picture: "Giftastic.png"}
 ]
 
 
@@ -19,10 +20,10 @@ $(document).ready(function(){
   }).then(function(res){
     console.log(res);
     $(".user-image").attr("src", res.avatar_url);
-    $(".user-about").append(`<h4>${res.bio}</h4>`);
+    $(".user-about").append(`<h5>${res.bio}</h5>`);
     $(".user-info").append(`<h4>${res.name}</h4>`);
     $(".user-info").append(`<h4>@${res.login}</h4>`);
-    $(".user-contact").append(`<h6><i class="fab fa-github"></i> <a href="${res.html_url}">${res.html_url}</a></h6>`);
+    $(".user-contact").append(`<h6><i class="fab fa-github"></i> <a href="${res.html_url}">Github</a></h6>`);
     $(".user-contact").append(`<h6><i class="fas fa-map-marker-alt"></i> ${res.location}</h6>`);
   })
 
