@@ -4,6 +4,19 @@
 // })
 //./assets/images/portfolio
 
+
+/* 
+  new Ideas
+  
+  keep allowed projects with their pictures in firebase 
+  then get the projects from github.
+
+  add articles? maybe I could start writing on meduim?
+*/
+
+
+
+
 const allowedProjects = [
   {name: "Word-Guess-Game", picture: "Guess the Word.png"},
   {name: "unit-4-game", picture: "Starwars.jpg"},
@@ -61,11 +74,3 @@ $(document).ready(function(){
     })
   })
 })
-
-{/* <img class="user-image" src=""/>
-            <div class="user-info">
-name
-            </div>
-            <div class="user-contact">
-
-</div> */}
