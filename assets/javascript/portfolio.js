@@ -1,33 +1,5 @@
-// Use jquery to handle click events on portfolio items
-// $(".card").click(function(){
-//   window.open($(this).attr("data"));
-// })
-//./assets/images/portfolio
 
-<<<<<<< HEAD
 let ready = false;
-=======
-
-/* 
-  new Ideas
-  
-  keep allowed projects with their pictures in firebase 
-  then get the projects from github.
-
-  add articles? maybe I could start writing on meduim?
-*/
-
-
-
-
-const allowedProjects = [
-  {name: "Word-Guess-Game", picture: "Guess the Word.png"},
-  {name: "unit-4-game", picture: "Starwars.jpg"},
-  {name: "TriviaGame", picture: "TriviaGame.png"},
-  {name: "GifTastic", picture: "Giftastic.png"}
-]
-
->>>>>>> 3f1bb96b78a2e24705bf707de8bd9ebd59a7a6e4
 
 
 $(document).ready(function(){
