@@ -74,8 +74,4 @@ function getProjectsGit(currentProjects){
       //
     })
   })
-<<<<<<< HEAD
 }
-=======
-})
->>>>>>> 3f1bb96b78a2e24705bf707de8bd9ebd59a7a6e4
