@@ -25,6 +25,16 @@
   width: 100%;
 }
 
+.user-about{
+  width: 60%;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  max-height: 240px;
+}
+
 #portfolio{
   background-color: rgb(151, 151, 151);
   max-height: none;
@@ -37,19 +47,10 @@
   border-bottom: #1d1d1d;
 }
 
-.card{
-  transition: 1s;
-}
-
-.card:hover{
-  transform: scale(1.01);
-  transition: 1s;
-}
-
 
 @media (min-width: 990px) {
   .user-image{
-    width: 100%;
+    width: 70%;
   }
   .user-flex{
     align-items: start;
@@ -63,11 +64,13 @@
     position: fixed;
     top:50%;
     transform: translateY(-50%);
-    
     width: 20%;
   }
   #portfolio{
     min-height: 100vh;
+  }
+  .user-about{
+    width: 100%;
   }
 }
 
